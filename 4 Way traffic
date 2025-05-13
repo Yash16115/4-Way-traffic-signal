@@ -1,0 +1,56 @@
+int R1=2;
+int G1=3;----//North//
+int Y1=4;
+int R2=5;
+int G2=6;---//East//
+int Y2=7;
+int R3=8;
+int G3=9;-----//South//
+int Y3=10;
+int R4=11;
+int G4=12;---//West//
+int Y4=13;
+void Setup( ){
+pinMode(2,OUTPUT);
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+pinMode(9,OUTPUT);
+pinMode(10,OUTPUT);
+pinMode(11,OUTPUT);
+pinMode(12,OUTPUT);
+pinMode(13,OUTPUT);
+}
+void Loop( ){
+digitalWrite(2,LOW);
+digitalWrite(3,HIGH);
+Delay(5000);
+digitalWrite(3,LOW);  //North//
+digitalWrite (4,HIGH);
+Delay(3000);
+digitalWrite (2,HIGH);
+digitalWrite(5,LOW);
+digitalWrite(6,HIGH);
+Delay(5000);
+digitalWrite(6,LOW);  //East//
+digitalWrite (7,HIGH);
+Delay(3000);
+digitalWrite (5,HIGH);
+digitalWrite(8,LOW);
+digitalWrite(9,HIGH);
+Delay(5000);
+digitalWrite(9,LOW);  //South//
+digitalWrite (10,HIGH);
+Delay(3000);
+digitalWrite (8,HIGH);
+digitalWrite(11,LOW);
+digitalWrite(12,HIGH);
+Delay(5000);
+digitalWrite(12,LOW);  //West//
+digitalWrite (13,HIGH);
+Delay(3000);
+digitalWrite (11,HIGH);
+}
